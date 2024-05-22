@@ -25,8 +25,8 @@ func main() {
 	mux.HandleFunc("/update", updateDomainHandler)
 	mux.HandleFunc("/", rootHandler)
 
-	fmt.Println("Server listening on port 8080")
-	log.Fatalln(http.ListenAndServe(":8080", mux))
+	fmt.Println("Server listening on port 80")
+	log.Fatalln(http.ListenAndServe(":80", mux))
 }
 
 // Checks if it contains a subdomain and if so redirects
